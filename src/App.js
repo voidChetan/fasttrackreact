@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import User from './components/User';
+import Admin from './components/Admin';
+import PremetiveVariable from './components/PremetiveVariable';
+import ObjectModification from './components/ObjectModification';
+import ArrayModification from './components/ArrayModification';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className="col-12">
+          {/* <ObjectModification/> */}
+          <ArrayModification/>
+        </div> 
+      </div>
     </div>
   );
 }
