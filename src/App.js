@@ -5,6 +5,9 @@ import Admin from './components/Admin';
 import PremetiveVariable from './components/PremetiveVariable';
 import ObjectModification from './components/ObjectModification';
 import ArrayModification from './components/ArrayModification';
+import ObjectArray from './components/ObjectArray';
+import Style from './components/Style';
+import DynamicClass from './components/DynamicClass';
 
 function App() {
   return (
@@ -12,7 +15,10 @@ function App() {
       <div className="row">
         <div className="col-12">
           {/* <ObjectModification/> */}
-          <ArrayModification/>
+          {/* <ArrayModification/> */}
+          {/* <ObjectArray/> */}
+          {/* <Style/> */}
+          <DynamicClass/>
         </div> 
       </div>
     </div>
