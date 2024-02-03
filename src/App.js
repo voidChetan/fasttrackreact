@@ -10,6 +10,8 @@ import Style from './components/Style';
 import DynamicClass from './components/DynamicClass';
 
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import HideShow from './components/HideShow';
+import MaapOperator from './components/MaapOperator';
 function App() {
   return (
     <div className="App">
@@ -29,6 +31,12 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to="/DynmaicCss"> Dynmaic-Css</Link>
               </li> 
+              <li className="nav-item">
+                <Link className="nav-link" to="/show-hide"> Show-Hide</Link>
+              </li> 
+              <li className="nav-item">
+                <Link className="nav-link" to="/map"> map</Link>
+              </li> 
             </ul>
           </div>
         </nav>
@@ -39,6 +47,8 @@ function App() {
           <Route path='/DynmaicClass' element={<DynamicClass></DynamicClass>}></Route>
           <Route path='/DynmaicCss' element={<Style></Style>}></Route>
           <Route path='/PremitiveDatType' element={<PremetiveVariable></PremetiveVariable>}></Route>
+          <Route path='/show-hide' element={<HideShow></HideShow>}></Route>
+          <Route path='/map' element={<MaapOperator></MaapOperator>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
