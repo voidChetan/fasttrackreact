@@ -11,7 +11,8 @@ const ArrayModification = () => {
     } 
 
     const addCity = () => {
-        setCityList(preList => [cityName,...preList])
+        setCityList(preList => [cityName,...preList]);
+        setCityName('');
     }
 
     return (

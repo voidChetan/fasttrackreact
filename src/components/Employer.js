@@ -20,7 +20,7 @@ const Employer = () => {
     });
 
     const changeFormObj = (event,key)=> {
-        setEmployerObj(prevObj=> ({...prevObj,[key]:event.target.value}))
+        setEmployerObj(prevObj => ({...prevObj,[key]:event.target.value}))
     }
 
     useEffect(() => {
@@ -29,6 +29,7 @@ const Employer = () => {
 
     const getEmployer = async () => {
         const result = await axios.get("https://freeapi.gerasim.in/api/JobPortal/GetAllEmployer");
+        debugger;
         setEmployerList(result.data.data);
     }
 

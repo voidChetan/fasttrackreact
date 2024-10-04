@@ -20,7 +20,7 @@ const HideShow = () => {
         setDiv1(false)
     }
     return (
-        <div>
+        <div> 
             <div className='row'>
                 <div className='col-3'>
                     {
@@ -67,6 +67,9 @@ const HideShow = () => {
             </div>
         </div>
     );
+
+   
 };
+ 
 
 export default HideShow;
